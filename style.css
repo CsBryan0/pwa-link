@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -12,48 +13,85 @@ body {
   flex-direction: column;
 }
 
-    header {
-      background: #1d5e9e;
-      color: white;
-      padding: 16px;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+header {
+  background: #1d5e9e;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-    footer {
-      background: #1d5e9e;
-      color: white;
-      padding: 12px;
-      text-align: center;
-      font-size: 0.85rem;
-      font-weight: bold;
-    }
+footer {
+  background: #1d5e9e;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
 
-    main {
-      padding: 16px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      flex: 1;
-    }
+main {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  flex: 1;
+}
 
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease;
-    }
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-    }
+.card:hover {
+  transform: scale(1.03);
+}
 
-    .icon {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
+.icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.install-container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.install-btn {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.install-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.install-btn:active {
+  transform: scale(0.97);
+}
+
+.install-btn span {
+  font-size: 1.3rem;
+}
