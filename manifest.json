@@ -1,0 +1,15 @@
+{
+  "name": "Câmara Municipal",
+  "short_name": "Câmara",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#1f2937",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1946/1946488.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
