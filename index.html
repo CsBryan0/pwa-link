@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,51 +9,9 @@
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#1f2937" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      background: #f3f4f6;
-      color: #111827;
-    }
-
-    header {
-      background: #1f2937;
-      color: white;
-      padding: 16px;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 16px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .icon {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -60,7 +19,28 @@
   </header>
 
   <main>
-    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/sessao/pesquisar-sessao?data_inicio__year=2026" target="_self">
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/parlamentar" target="_self">
+      <div class="icon">👥</div>
+      Mesa Diretora
+    </a>
+
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/comissao/" target="_self">
+      <div class="icon">👥</div>
+      Comissões
+    </a>
+
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/parlamentar/" target="_self">
+      <div class="icon">👨‍💼</div>
+      Parlamentares
+    </a>
+
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/sessao/pauta-sessao/452/" target="_self">
+      <div class="icon">📋</div>
+      Pautas das Sessões
+    </a>
+
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/sessao/pesquisar-sessao?data_inicio__year=2026"
+      target="_self">
       <div class="icon">🏛️</div>
       Sessões Plenárias
     </a>
@@ -70,11 +50,24 @@
       Matérias Legislativas
     </a>
 
-    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/parlamentar" target="_self">
-      <div class="icon">👥</div>
-      Mesa Diretora
+    <a class="card"
+      href="https://sapl.santaleopoldina.es.leg.br/norma/pesquisar?tipo=&numero=&ano=&data_0=&data_1=&data_publicacao_0=&data_publicacao_1=&ementa=&assuntos=&data_vigencia_0=&data_vigencia_1=&orgao=&o=&indexacao=&autorianorma__autor=&autorianorma__primeiro_autor=unknown&autorianorma__autor__tipo=&autorianorma__autor__parlamentar_set__filiacao__partido=&salvar=Pesquisar"
+      target="_self">
+      <div class="icon">⚖️</div>
+      Normas Jurídicas
     </a>
 
+
+    <a class="card" href="https://sapl.santaleopoldina.es.leg.br/sistema/relatorios/" target="_self">
+      <div class="icon">📓</div>
+      Relatórios
+    </a>
+
+
+    <a class="card" href="https://santaleopoldina.prefeiturasempapel.com.br/legislacao/" target="_self">
+      <div class="icon">📜</div>
+      Legislação Online
+    </a>
     <a class="card" href="https://sapl.santaleopoldina.es.leg.br" target="_self">
       <div class="icon">🌐</div>
       Portal SAPL
@@ -88,4 +81,5 @@
   </script>
 
 </body>
+
 </html>
