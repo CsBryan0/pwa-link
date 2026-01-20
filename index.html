@@ -14,6 +14,11 @@
 
 <body>
 
+  <button id="installBtn" style="display:none">
+    📲 Instalar aplicativo
+  </button>
+
+
   <header>
     <img src="https://www.santaleopoldina.es.leg.br/logo.png" alt="Logo da Câmara Municipal" width="300" />
   </header>
@@ -76,15 +81,30 @@
 
   <footer>
     &copy; 2026 Câmara Municipal de Santa Leopoldina - ES
-  <footer>
+    <footer>
 
-  </footer>
+    </footer>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
-    }
-  </script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+
+      let deferredPrompt;
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.getElementById('installBtn').style.display = 'block';
+      });
+
+      document.getElementById('installBtn').addEventListener('click', async () => {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        document.getElementById('installBtn').style.display = 'none';
+      });
+    </script>
 
 </body>
 
