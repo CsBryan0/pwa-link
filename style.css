@@ -1,9 +1,16 @@
-   body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      background: #f3f4f6;
-      color: #111827;
-    }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background: #f3f4f6;
+  color: #111827;
+
+  display: flex;
+  flex-direction: column;
+}
 
     header {
       background: #1d5e9e;
@@ -17,9 +24,9 @@
     footer {
       background: #1d5e9e;
       color: white;
-      padding: 16px;
+      padding: 12px;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 0.85rem;
       font-weight: bold;
     }
 
@@ -28,6 +35,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 16px;
+      flex: 1;
     }
 
     .card {
